@@ -3,7 +3,7 @@
 
 \section{Base de Datos} 	
 \setlength{\parskip}{5mm}
-Una base de datos (cuya abreviatura es BD) es una entidad en la cual se pueden almacenar datos de manera estructurada, con la menor redundancia posible. Diferentes programas y diferentes usuarios deben poder utilizar estos datos. Por lo tanto, el concepto de base de datos generalmente está relacionado con el de red ya que se debe poder compartir esta información. De allí el término base. "Sistema de información" es el término general utilizado para la estructura global que incluye todos los mecanismos para compartir datos que se han instalado. (\citet{bdbib}, 2016) 
+Una base de datos (cuya abreviatura es BD) es una entidad en la cual se pueden almacenar datos de manera estructurada, con la menor redundancia posible. Diferentes programas y diferentes usuarios deben poder utilizar estos datos. Por lo tanto, el concepto de base de datos generalmente está relacionado con el de red ya que se debe poder compartir esta información. De allí el término base. Sistema de información es el término general utilizado para la estructura global que incluye todos los mecanismos para compartir datos que se han instalado. (\citet{bdbib}, 2016) 
 
 
 \setlength{\parskip}{0mm}
@@ -73,13 +73,97 @@ Desarrollado sobre Oracle Database, Oracle Content Database ha sido diseñada pa
 
 \section{Base de datos móvil} 		
 
-https://modelosbd2012t1.wordpress.com/2012/03/15/base-de-datos-moviles-3/
+Es una Base de datos donde los usuarios pueden acceder a la información lejos de donde se encuentra almacenada la base de datos, se hace utilizando una conexión inalámbrica. (\citet{bdmovil}, 2012)
+
+\subsection{Sistema manejador de base de datos móvil} 
+
+\subsubsection{SQLite}
+\setlength{\parskip}{5mm}
 
 
+SQLite es una herramienta de software libre, que permite almacenar información en dispositivos empotrados de una forma sencilla, eficaz, potente, rápida y en equipos con pocas capacidades de hardware, como puede ser una PDA o un teléfono celular. SQLite implementa el estándar SQL92 y también agrega extensiones que facilitan su uso en cualquier ambiente de desarrollo. 
+
+Esto permite que SQLite soporte desde las consultas más básicas hasta las más complejas del lenguaje SQL, y lo más importante es que se puede usar tanto en dispositivos móviles como en sistemas de escritorio, sin necesidad de realizar procesos complejos de importación y exportación de datos, ya que existe compatibilidad al 100\% entre las diversas plataformas disponibles, haciendo que la portabilidad entre dispositivos y plataformas sea transparente. (\citet{sqlitebib}, 2007)
+
+Características:
+\setlength{\parskip}{0mm}
+\begin{itemize}
+
+\item La base de datos completa se encuentra en un solo archivo.
+
+\item Puede funcionar enteramente en memoria, lo que la hace muy rápida.
+
+\item Tiene un footprint menor a 230KB.
+
+\item Es totalmente autocontenida (sin dependencias externas).
+
+\item Cuenta con librerías de acceso para muchos lenguajes de programación.
+
+\item Soporta texto en formato UTF-8 y UTF-16, así como datos numéricos de 64 bits.
+
+\item Soporta funciones SQL definidas por el usuario (UDF).
+
+\item El código fuente es de dominio público y se encuentra muy bien documentado.
+
+\end{itemize}
+
+
+\subsubsection{SYBASE}
+\setlength{\parskip}{5mm}
+Es la abreviatura de "Adaptive Server Enterprise", el software de base de datos relacional fabricado y vendido por Sybase Inc. ASE es un software versátil, de clase empresarial RDBMS que es especialmente bueno en el manejo de cargas de trabajo OLTPASE, es utilizado de forma intensiva en el mundo financiero (bancos, bolsas de valores, compañías de seguros), en el comercio electrónico, así como en el área de prácticamente todos los demás. (\citet{sybasebib}, 2011)
+
+Características:
+\setlength{\parskip}{0mm}
+
+\begin{itemize}
+
+\item La opción IMD permite la virtualización y crecimiento de datos fundamental para satisfacer las necesidades de grandes volúmenes de datos y organizaciones con alta concurrencia de usuarios.
+
+\item Permite a los clientes existentes de Sybase ASE adoptar fácilmente las nuevas características y optimizaciones sin la necesidad de una actualización de la base de datos
+
+\item Copias de respaldo en línea y de alto rendimiento. 
+
+\item Soporte a múltiples herramientas de desarrollo y lenguajes de programación, como PowerBuilder, Visual Basic, Java, PHP.
+
+\item Técnicas de particionamiento semántico de tablas que aumentan la velocidad de acceso a los datos. 
+
+\end{itemize}
+
+
+\subsubsection{MICROSOFT SQL SERVER CE}
+\setlength{\parskip}{5mm}
+
+Microsoft SQL Server Compact en su actual versión 4.0 es una base de datos compacta para aplicaciones de escritorio y web. SQL Server Compact 4.0 posee un modelo de programación común a otras ediciones de SQL Server para el desarrollo tanto de aplicaciones nativas como administradas. SQL Server Compact ofrece funcionalidad de base de datos relacional en un espacio reducido: un sólido almacén de datos, un procesador de consultas de optimización y una conectividad confiable y escalable. (\citet{sqlservercebib}, 2016) 
+
+Características:
+\setlength{\parskip}{0mm}
+
+\begin{itemize}
+
+\item Integración con WebMatrix una pila de desarrollo web gratuita que integra un servidor web con marcos de trabajo de programación y base de datos.
+
+\item SQL Server Compact 4.0 usa el algoritmo SHA2 para proteger los datos y proporcionar un alto nivel de seguridad. 
+
+\item SqlServerCe está enfocado a funcionar sobre dispositivos con características limitadas
+
+\item Posee un motor de base de datos así como un procesador y un optimizador de consultas especialmente diseñado para entornos móviles
+
+\item Únicamente soporta tipos de datos de cadena compatibles con Unicode (nchar, nvarchar, ntext). 
+
+\end{itemize}
+
+(\citet{sqlserverce2bib}, 2016)
 
 \subsection{Arquitectura de una base de datos móvil} 
 
-\subsection{Sistema manejador de base de datos móvil} 
+%\begin{figure}[H]
+%\begin{center}
+%	\includegraphics[width=13cm,height=8cm]{img/mobiledb.jpg}
+%\end{center}
+%\caption{Mobile divice. (Tomada de , 2014)}
+%\label{fig:Mobiledb}
+%\end{figure}
+
 
 
 \section{Dispositivo móvil}
@@ -89,8 +173,8 @@ Dispositivo móvil (mobile device), también conocido como computadora de bolsil
 Estrictamente hablando, muchos de los llamados dispositivos móviles no tienen la capacidad de moverse. Más bien son dispositivos que pueden ser fácilmente transportados por sus usuarios
 \setlength{\parskip}{0mm}
 
-Referecia
-↑ The University of California, Riverside, ed. (3 de diciembre de 2015). «When Apps Talk Behind Your Back» (en inglés). Consultado el 10 de diciembre de 2015. «We focused on a relatively neglected aspect of security research, which is the potential for good apps to leak personal information through the sites they interact with.»
+%Referecia
+%↑ The University of California, Riverside, ed. (3 de diciembre de 2015). «When Apps Talk Behind Your Back» (en inglés). Consultado el 10 de diciembre de 2015. «We focused on a relatively neglected aspect of security research, which is the potential for good apps to leak personal information through the sites they interact with.»
 
 \subsection{Tipos de dispositivos móviles}
 
@@ -377,7 +461,7 @@ Otras características de Django son:
 
 	\item Un mapeador objeto-relacional.
 	
-	\item Aplicaciones "enchufables" que pueden instalarse en cualquier página gestionada con Django.
+	\item Aplicaciones modulares que pueden instalarse en cualquier página gestionada con Django.
 	
 	\item Una API de base de datos robusta.
 	
@@ -544,7 +628,7 @@ Este framework permite a los desarrolladores web centrarse en el desarrollo de a
 
 PhoneGap maneja API que permiten tener acceso a elementos como el acelerómetro, la cámara, los contactos en el dispositivo, la red, el almacenamiento, las notificaciones, etc. Estas API se conectan al sistema operativo usando el código nativo del sistema huésped a través de una Interfaz de funciones foráneas en Javascript.
 PhoneGap permite el desarrollo ya sea ejecutando las aplicaciones en nuestro navegador web, sin tener que utilizar un simulador dedicado a esta tarea, y brinda la posibilidad de soportar funciones sobre frameworks como Sencha Touch o JQuery Mobile.
-PhoneGap es una distribución de Apache Cordova.5 La aplicación se llamó en un principio "PhoneGap", y posteriormente "Apache Callback". Ambos sistemas tienen funciones casi idénticas, la diferencia principal entre Apache Cordova y Phonegap es que el segundo tiene acceso a servicios de compilación en la nube proporcionados por Adobe Creative Cloud. (\citet{phonegapbib}, 2016)
+PhoneGap es una distribución de Apache Cordova.5 La aplicación se llamó en un principio "PhoneGap", y posteriormente Apache Callback. Ambos sistemas tienen funciones casi idénticas, la diferencia principal entre Apache Cordova y Phonegap es que el segundo tiene acceso a servicios de compilación en la nube proporcionados por Adobe Creative Cloud. (\citet{phonegapbib}, 2016)
 
 Ventajas
 \setlength{\parskip}{0mm}
