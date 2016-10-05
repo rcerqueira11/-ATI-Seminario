@@ -4,22 +4,22 @@
 \setlength{\parskip}{5mm}
 
 
-Actualmente al asistir a la cita para la inspección del vehiculo, el perito registra las especificaciones del mismo en una hoja para luego ser archivada y guardada, este proceso se realiza manualmente.
+Actualmente al asistir a la cita para la inspección del vehículo, el perito registra las especificaciones del mismo en una hoja para luego ser archivada y guardada, este proceso se realiza manualmente.
 
-El procesos presenta una serie de inconveniente en cuando a la persistencia de los datos y la administracion se refiere:
+El procesos presenta una serie de inconveniente en cuando a la persistencia de los datos y la administración se refiere:
 
 \begin{itemize}
 
-	\item Las planillas de inspeccion se guardan solamente en fisico.
+	\item Las planillas de inspección se guardan solamente en físico.
 
-	\item El riesgo de perder informacion que no esta respaldada.
+	\item El riesgo de perder información que no esta respaldada.
 
-	\item El acceso a la informacion, al ser una busqueda manual, no es eficiente. 
+	\item El acceso a la información, al ser una búsqueda manual, no es eficiente. 
 
 \end{itemize}
 
 
-Ante la situacion descrita, se plantea elaborar una solucion con tecnologia Web, que permita a los peritos, mantener un registro digital de las planillas de inspeccion de los vehiculos.
+Ante la situación descrita, se plantea elaborar una solución con tecnología Web, que permita a los peritos, mantener un registro digital de las planillas de inspección de los vehículos.
 
 
 
@@ -37,8 +37,9 @@ Ante la situacion descrita, se plantea elaborar una solucion con tecnologia Web,
 \section{Justificación}
 
 
-Un sistema web es la mejor solucion para mantener la persitencia de las planillas de inspecciona la problematica descrita, ya que 
-% Este trabajo se justifica en la posibilidad de apoyar al Club Venezolano de Rithmomachia permitiendo que se puedan realizar actividades interactivas por medio de la computación, además de llevar a cabo torneos autogestionados, permitiendo de esta manera la posibilidad de almacenar de forma automática un registro de las partidas jugadas y así poder usar esta información para futuros trabajos e investigaciones sobre el juego. 
+Un sistema con tecnologías web, es la mejor solución para sistematizar la administración de las planillas de inspección y para el almacenamiento de las mismas de forma digital, para que de esta forma la empresa aseguradora pueda llevar un registro cuyo gestión sea mas eficiente y de múltiple acceso.
+
+La implementación de este sistema representa una reducción riesgos y costos a largo plazo para la compañía, permitiendo que la gestión de las planillas de inspección y los procesos vinculados con ellas se lleven acabo de manera óptima.
 
 % Falta
 \section{Objetivo general}
@@ -71,7 +72,7 @@ Se propone el uso de un sistema web con la finalidad de mantener la persistencia
 
 Para la base de datos utilizaremos PostgreSQL, ya que es una de las bases de datos mas potentes de software libre, con un alto rendimiento, seguridad y a su vez estar disponible prácticamente para todas las versiones de los sistemas operativos Unix y también Windows. Su versatilidad y robustez la hace el candidato perfecto para el sistema que se busca implementar.
 
-Se propone utilizar el framework de Django para el desarrollo del sistema. Ya que siendo uno de los muchos frameworks que están establecidos sobre la base del patrón MVC en sus beneficios se encuentra la separación de responsabilidad y organización del codigo. Este framework incorpora un patrón llamado MTV (Modelo-Template-Vista), los templates son donde se implementan todas las interfaces de los usuarios, que serán desplegadas por las vistas en el lado del servidor y los models corresponde a la base da datos donde persistirá la información. Además posee un sistema jerárquico de plantilla que proporciona la reutilización de código y la extensibilidad de las aplicaciones. Posee un buen soporte para PostgresSQL, la base de datos que se piensa utilizar para el sistema. 
+Se propone utilizar el framework de Django para el desarrollo del sistema. Ya que siendo uno de los muchos frameworks que están establecidos sobre la base del patrón MVC en sus beneficios se encuentra la separación de responsabilidad y organización del código. Este framework incorpora un patrón llamado MTV (Modelo-Template-Vista), los templates son donde se implementan todas las interfaces de los usuarios, que serán desplegadas por las vistas en el lado del servidor y los models corresponde a la base da datos donde persistirá la información. Además posee un sistema jerárquico de plantilla que proporciona la reutilización de código y la extensibilidad de las aplicaciones. Posee un buen soporte para PostgresSQL, la base de datos que se piensa utilizar para el sistema. 
 
 \setlength{\parskip}{0mm}
 
@@ -93,6 +94,6 @@ Es esta metodología se realizan entregas parciales del resultado final del proy
 
 \section{Alcance}
 
-Como alcance del trabajo especial de grado se tiene previsto lograr mejorar la administracion de las planillas de inspeccion de los vehiculos, minimizar los riesgos de perdida de informacion que no esta respaldada y hacer mas eficiente el acceso a la misma.
+Como alcance del trabajo especial de grado se tiene previsto lograr mejorar la administración de las planillas de inspección de los vehículos, minimizar los riesgos de perdida de información que no esta respaldada y hacer mas eficiente el acceso a la misma.
 
-En referencia a las planillas que se ingresaran al sistema, este permitira su edicion en caso de errores una vez antes de ser guardadas en definitivo.
+En referencia a las planillas que se ingresaran al sistema, este permitirá su edición en caso de errores una vez antes de ser guardadas en definitivo.
