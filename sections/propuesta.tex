@@ -150,6 +150,20 @@ Es esta metodología se realizan entregas parciales del resultado final del proy
 \end{figure}
 
 \newpage
+\setlength{\parskip}{5mm}
+Inicialmente, cuando un cliente desea realizar la inspección del vehículo, este deberá dirigirse a la taquilla en la cual se le identificara si esta asegurado o no, en caso de estarlo se le preguntara si quiere presentar algún reclamo o viene por una re-inspección del vehículo
+
+En caso del reclamo, este sera manejado mediante un formulario el cual sera almacenado para posteriormente ser atendido.
+
+En caso de que venga por una re-inspección se verificara el estatus de su planilla de suscripción del vehículo, si esta ya fue procesada se le notificara que no es posible realizar la re-inspección, ya que su solicitud de suscripción ya fue gestionada. Si la planilla de suscripción aun no ha sido aprobada se le generara un numero de re-inspección y se habilitara el formulario de edición de la planilla de suscripción asociada a ese cliente. El cliente esperara el llamado del perito el cual realizara la re-inspección del vehículo. Cuando la re-inspección termine este le pedirá la confirmación al cliente, si esta de acuerdo con los datos finales de la inspección, de ser así firmara los documentos en caso contrario se realizara nuevamente la re-inspección donde el cliente crea necesario que hay que tener especial atención. Luego el perito editara la planilla del cliente, se procesaran los nuevos datos y la planilla se guardara.
+
+En caso de que no este registrado, el cliente recibirá un numero y tendrá que espera un tiempo, se encontrara con el perito el cual le pedirá los datos personales y comenzara a realizar la inspección, al finalizar la misma se le pedirá la verificación al cliente.
+
+Cuando el cliente verifique que los datos son correctos el perito procederá a realizar un vaciado de la información de inspección en el formulario del sistema el cual generara la planilla de suscripción con estado "No Conformado", el cual denota que puede ser editada una vez mas antes de ser guardada definitivamente.
+\setlength{\parskip}{0mm}
+
+
+\newpage
 \section{Alcance}
 
 Como alcance del trabajo especial de grado se tiene previsto lograr el registro de usuarios que accederán al sistema para gestionar las planillas, la captura de los datos de la planilla de inspección, la edición de la planilla en caso de incongruencias antes de ser almacenada y guardar el conjunto de datos en la base de datos para su posterior consulta
